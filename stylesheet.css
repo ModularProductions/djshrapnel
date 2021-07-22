@@ -3,13 +3,22 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #406;
 	background-color: #000000;
-	margin-left: auto;
+	/* margin-left: auto;
 	margin-right: auto;
-	margin-top: 0;
+	margin-top: 0; */
+	margin: 0 auto;
 }
 
 #container {
-	background: url("assets/page/background.gif")
+	background: url("assets/page/background.gif");
+	/* height: 100%; */
+	/* overflow: auto; */
+	position: relative;
+}
+
+#header, #mid, #footer {
+	/* position: absolute; */
+	width: 100%
 }
 
 #header {
@@ -19,7 +28,6 @@ body {
 	margin-right: auto;
 	margin-bottom: 28px;
 	text-align: center;
-	position: relative; left: 0; top: 0;
 }
 
 #headerplate {
@@ -45,13 +53,17 @@ body {
 	color: #000;
 }
 
-#body1 {
+#mid, #left-border-wrapper, #right-border-wrapper, #content {
+	min-height: calc(100vh - 215px)
+}
+
+#left-border-wrapper {
 	background-image: url("assets/page/lbar.png");
 	background-repeat: repeat-y;
 	background-position: top left
 }
 
-#body2 {
+#right-border-wrapper {
 	background-image: url("assets/page/rbar.png");
 	background-repeat: repeat-y;
 	background-position: top right;
@@ -59,20 +71,32 @@ body {
 
 #content {
 	position: relative;
-	top: 0; left: 0;
+	/* top: 0; left: 0; */
 	margin-top: -3em;
 	padding-right: 98px;
 	padding-left: 100px;
 	padding-bottom: 2em;
 }
 
+#content p {
+	font-family: 'IM Fell English', serif;
+}
+
 .contact-tiles {
+	width: 95%;
+	display: block;
+	margin: 0 auto;
 	/* left: 50%;
 	transform: translateX(-50%); */
 }
 
+.contact-tiles a {
+	text-decoration: none
+}
+
 .tile {
-	width: 12em;
+	min-width: 20%;
+	max-width: 50%;
 	border: 2px solid #406;
 	padding: 1em;
 	margin: .5em;
@@ -104,7 +128,7 @@ body {
 }
 
 .tile span {
-	color: #CFF;
+	color: #d1ccd7;
 	position: absolute;
 	z-index: 100;
 	bottom: .5em;
@@ -112,6 +136,7 @@ body {
 	display: block;
 	font-family: 'IM Fell English', serif;
 	font-size: 1.1rem;
+	font-style: italic;
 }
 
 #events {
@@ -132,6 +157,9 @@ body {
 }
 
 #footer {
+	min-width: 700px; max-width: 1000px;
+	/* position: absolute; */
+	/* bottom: 0; */
 	margin-top: -1em;
 	text-align: center;
 	background-image: url("assets/page/footer.jpg");
