@@ -1,137 +1,148 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-	<title>DJ Shrapnel - Savannah, GA</title>
-	<link href="stylesheet.css" rel="stylesheet" type="text/css">
-	<link href="http://www.djshrapnel.com/galleria/themes/classic/galleria.classic.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=IM+Fell+English|IM+Fell+English+SC' rel='stylesheet' type='text/css'>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<style>
-#galleria { height: 600px; background:#000; }
-#loader { width:200px; height:100px; margin:-50px 0 0 -100px; position:absolute; left:50%; top:50%; color:#fff; text-align:center;
-    z-index:4; display:none; background:#000 url('loader.gif') no-repeat 50% 25px; opacity:.8; line-height:150px; border-radius:6px }
-#menu { visibility: hidden; width:140px; margin-left: auto; margin-right: auto; }
-#menu a { display:block; padding:1px 6px; }
-#menu a:hover { background:#151515; background:rgba(0,0,0,.1); }
-#menu a.active { background:#111; background:rgba(0,0,0,.3); color:#fff }
-#fullscreen {font-family: 'IM Fell English', serif; font-variant: small-caps; text-decoration: none; color:#CCC; position: relative; margin-left: 42%; }
-#fullscreen:hover { color:#fff }
-	</style>
-	<script src="galleria/galleria-1.2.9.min.js"></script>
-	<script src="galleria/plugins/flickr/galleria.flickr.min.js"></script>
-</head>
-<body lang="en-US">
-<div id="container">
-	<div id="header">
-		<img src="ulangel.png" style="float: left" />
-		<div id="headerplate">
-				<div class="nav">
-				<a href="http://www.djshrapnel.com">News</a> | <a href="http://www.djshrapnel.com/about.html">About</a> | <a href="http://www.djshrapnel.com/?cat=8">Sets</a> | <a href="http://www.djshrapnel.com/gallery.html">Gallery</a> | <a href="http://www.djshrapnel.com/links.html">Links</a>
-				</div>
-		</div>
-		<img src="urangel.png" width="152" height="215" style="position: absolute; top: 0px; right: 0px" />
-		<a href="http://www.twitter.com/djshrapnel" border="none"><img src="twitter.png" width="40" height="40" style="position: absolute; top: 172px; right: 150px" /></a><a href="http://www.facebook.com/shrapnel777" border="none"><img src="facebook.png" width="40" height="40" style="position: absolute; top: 172px; right: 100px" /></a>
-	</div>
-	<div id="body1">
-		<div id="body2">
-			<div id="content">
-<!-- gallery -->
-            	<div id="galleria">This gallery requires javascript to view.
-            	</div>
-            	<div id="menu">
-      		    <a href="http://www.flickr.com/photos/shrapnel777/sets/72157627711062776/">Shrapnel</a>
-        		</div>    			
-        		<script>
-        		// load the theme
-        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+  <head>  
+    <title>DJ Shrapnel . com</title>
+    <meta charset="utf-8">
+    <meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+    <!-- <meta http-equiv="refresh" content="2" > -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online lair for DJ Shrapnel">
+    <meta name="author" content="MTH">
+    <meta name="keywords" content="industrial dj dark dance savannah EBM gothic futurepop electronica shrapnel savannah georgia synthpop">    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="http://www.djshrapnel.com/galleria/themes/classic/galleria.classic.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+English|IM+Fell+English+SC' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <style>
+      #galleria { height: 600px; background:#000; }
+      #loader { width:200px; height:100px; margin:-50px 0 0 -100px; position:absolute; left:50%; top:50%; color:#fff; text-align:center;
+          z-index:4; display:none; background:#000 url('loader.gif') no-repeat 50% 25px; opacity:.8; line-height:150px; border-radius:6px }
+      #menu { visibility: hidden; width:140px; margin-left: auto; margin-right: auto; }
+      #menu a { display:block; padding:1px 6px; }
+      #menu a:hover { background:#151515; background:rgba(0,0,0,.1); }
+      #menu a.active { background:#111; background:rgba(0,0,0,.3); color:#fff }
+      #fullscreen {font-family: 'IM Fell English', serif; font-variant: small-caps; text-decoration: none; color:#CCC; position: relative; margin-left: 42%; }
+      #fullscreen:hover { color:#fff }
+    </style>
+    <script src="galleria/galleria-1.2.9.min.js"></script>
+    <script src="galleria/plugins/flickr/galleria.flickr.min.js"></script>
+  </head>
+  <body lang="en-US">
+    <script type="module" src="scripts/app.js"></script>
+    <div id="container">
+      <div id="header">
+        <img src="assets\page\ulangel.png" style="float: left">
+        <div id="headerplate">
+            <div class="nav">
+            <a href="./index.html">Home</a> | <a href="./about.html">About</a> | <a href="./listen.html">Listen</a> | <a href="./gallery.html">Gallery</a>
+            </div>
+        </div>
+        <img src="assets\page\urangel.png" width="152" height="215" style="position: absolute; top: 0px; right: 0px">
+      </div>
+      <div id="mid">
+        <div id="left-border-wrapper">
+          <div id="right-border-wrapper">
+            <div id="content">
+            <!-- gallery -->
+              <div id="galleria">This gallery requires javascript to view.
+              </div>
+              <div id="menu">
+                <a href="http://www.flickr.com/photos/shrapnel777/sets/72157627711062776/">Shrapnel</a>
+              </div>    			
+              <script>
+                // load the theme
+                Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
 
-        // create a flickr instance
-        var flickr = new Galleria.Flickr();
+                // create a flickr instance
+                var flickr = new Galleria.Flickr();
 
-        // cache the gallery
-        var elem = $('#galleria');
+                // cache the gallery
+                var elem = $('#galleria');
 
-        // create and append the loader growl
-        var loader = $('<div>', {
-            id: 'loader'
-        }).appendTo('#gallery');
+                // create and append the loader growl
+                var loader = $('<div>', {
+                    id: 'loader'
+                }).appendTo('#gallery');
 
-        // a local var used later
-        var set;
+                // a local var used later
+                var set;
 
-        // set flickr to fetch description and increase the photo limit
-        flickr.setOptions({
-            max: 100,
-            description: true
-        });
+                // set flickr to fetch description and increase the photo limit
+                flickr.setOptions({
+                    max: 100,
+                    description: true
+                });
 
-        // attach event handler for the menu
-        $('#menu a').click(function(e) {
+                // attach event handler for the menu
+                $('#menu a').click(function(e) {
 
-            e.preventDefault();
+                  e.preventDefault();
 
-            // toggle active class
-            $(this).addClass('active').siblings('.active').removeClass('active');
+                  // toggle active class
+                  $(this).addClass('active').siblings('.active').removeClass('active');
 
-            // extract the set id from the link href
-            set = this.href.split('/');
-            set = set[set.length-2];
+                  // extract the set id from the link href
+                  set = this.href.split('/');
+                  set = set[set.length-2];
 
-            // add loader text and show
-            loader.text('Loading '+$(this).text()).show();
+                  // add loader text and show
+                  loader.text('Loading '+$(this).text()).show();
 
-            // load the set
-            flickr.set(set, function(data) {
+                  // load the set
+                  flickr.set(set, function(data) {
 
-                // hide the loader
-                loader.fadeOut('fast');
+                      // hide the loader
+                      loader.fadeOut('fast');
 
-                // check if galleria has been initialized
-                if (elem.data('galleria')) {
+                      // check if galleria has been initialized
+                      if (elem.data('galleria')) {
 
-                    // load galleria with the new data
-                    elem.data('galleria').load( data );
+                          // load galleria with the new data
+                          elem.data('galleria').load( data );
 
-                // else initialize galleria (1st time)
-                } else {
-                    elem.galleria({
+                      // else initialize galleria (1st time)
+                      } else {
+                          elem.galleria({
 
-                        // add the data as dataSource
-                        dataSource: data,
+                              // add the data as dataSource
+                              dataSource: data,
 
-                        // add a custom fullscreen button
-                        extend: function() {
-                            $('#fullscreen').click(this.proxy(function(e) {
-                                e.preventDefault();
+                              // add a custom fullscreen button
+                              extend: function() {
+                                  $('#fullscreen').click(this.proxy(function(e) {
+                                      e.preventDefault();
 
-                                // call the enterFullscreen() method from the galleria API
-                                this.enterFullscreen();
-                            }));
-                        }
-                    });
-                }
-            });
-        });
+                                      // call the enterFullscreen() method from the galleria API
+                                      this.enterFullscreen();
+                                  }));
+                              }
+                          });
+                      }
+                  });
+              });
 
-        // trigger a click onload so that the first gallery will be displayed when entering
-        $('#menu a:first-child').click();   
-    			</script>
-    		    <a id="fullscreen" href="#">enter fullscreen</a>	 
-<!--end gallery-->
-			</div>           	
-	</div>
-	</div>
-	<div id="footer">
-		<img src="llskull.png" style="float: left" />
-		<img src="lrskull.png" style="float: right" />
-		<div class="nav">
-			<a href="http://www.djshrapnel.com">News</a> | <a href="http://www.djshrapnel.com/about.html">About</a> | <a href="http://www.djshrapnel.com/?cat=8">Sets</a> | <a href="http://www.djshrapnel.com/gallery.html">Gallery</a> | <a href="http://www.djshrapnel.com/links.html">Links</a>
-		</div>
-		<div class="clearer">
-		</div>
-	</div>
-</div>
-</body>
+              // trigger a click onload so that the first gallery will be displayed when entering
+              $('#menu a:first-child').click();   
+                </script>
+                  <a id="fullscreen" href="#">enter fullscreen</a>	 
+            <!--end gallery-->
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <img src="assets\page\llskull.png" style="float: left">
+          <img src="assets\page\lrskull.png" style="float: right">
+					<div class="nav">
+						<a href="./index.html">Home</a> | <a
+							href="./about.html">About</a> | <a
+							href="./listen.html">Listen</a> | <a
+							href="./gallery.html">Gallery</a>
+					</div>
+          <div class="clearer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
